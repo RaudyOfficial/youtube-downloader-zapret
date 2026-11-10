@@ -9,18 +9,17 @@
 | `scripts/downloader.ps1` | Основной скрипт на PowerShell |
 | `scripts/launch.cmd` | Запуск двойным кликом (вызывает PowerShell) |
 | `proxy/doh_proxy.py` | Локальный DoH-прокси (обходит отравленный DNS) |
-| `tools/yt-dlp.exe` | Скачиватель видео |
-| `tools/ffmpeg/` | ffmpeg, ffplay, ffprobe — для склейки видео и аудио |
+| `tools/` | Сюда кладете `yt-dlp.exe` отдельно (не входит в репозиторий из-за размера) |
+| `tools/ffmpeg/` | Сюда кладете `ffmpeg.exe`, `ffplay.exe`, `ffprobe.exe` отдельно |
 | `zapret/` | Рабочая конфигурация zapret (стратегия ALT11) |
 
 ## Быстрый старт
 
 1. **Склонируйте репозиторий** или скачайте ZIP и распакуйте в любую папку.
-2. Убедитесь, что во всех подпапках лежат нужные файлы (они уже в репозитории):
-   - `tools\yt-dlp.exe`
-   - `tools\ffmpeg\ffmpeg.exe`
-   - `zapret\bin\winws.exe`, `zapret\general (ALT11).bat` и остальное
-3. **Дважды кликните по `scripts\launch.cmd`**.
+2. **Скачайте недостающие утилиты** (они слишком велики для GitHub):
+   - [yt-dlp.exe](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe) → положите в `tools\`
+   - [FFmpeg](https://www.ffmpeg.org/download.html) → положите `ffmpeg.exe`, `ffplay.exe`, `ffprobe.exe` в `tools\ffmpeg\`
+3. Дважды кликните по `scripts\launch.cmd`.
 4. Вставьте ссылку на видео (`youtube.com/watch?v=...` или `youtu.be/...`).
 5. Выберите качество: 144p / 360p / 720p / 1080p / только аудио (mp3).
 6. Видео появится в папке **Загрузки / Downloads текущего пользователя**.
@@ -35,7 +34,7 @@
 
 - Windows 10 или 11
 - **Права администратора** — нужны для запуска zapret (он использует WinDivert для фильтрации сетевого трафика)
-- Ничего дополнительно устанавливать не нужно — всё необходимое уже в репозитории
+- yt-dlp.exe и ffmpeg нужно скачать отдельно (ссылки в разделе «Быстрый старт»)
 
 ## Если что-то не работает
 

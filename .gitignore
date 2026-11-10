@@ -6,6 +6,10 @@ downloads/
 *.webm
 *.part
 
+# Бинарные утилиты — скачиваются пользователем отдельно
+tools/*.exe
+tools/ffmpeg/*.exe
+
 # Логи и временные файлы
 *.log
 *.out
