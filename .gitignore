@@ -18,6 +18,9 @@ temp/
 # Локальный конфиг (создаётся из config.example.json)
 config.json
 
+# Референс дизайна (локальный файл)
+ref_design.png
+
 # OS
 .DS_Store
 Thumbs.db

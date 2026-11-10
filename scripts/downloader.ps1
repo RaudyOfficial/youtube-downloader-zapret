@@ -1,19 +1,17 @@
-﻿# YouTube Downloader (zapret + DoH) — линейный интерфейс
-# Запрос ссылки → выбор качества → скачивание.
-# Размещено: scripts/downloader.ps1
+﻿# YouTube Downloader (zapret + DoH) — v1.2.0
+# Тёмный терминальный интерфейс по референсу ref_design.png
+# scripts/downloader.ps1
 
 $ErrorActionPreference = 'Stop'
-$script:AppVersion = '1.1.0'
+$script:AppVersion = '1.2.0'
 
 # ------------------------- настройки -------------------------
-$ProjectRoot   = Split-Path -Parent $PSScriptRoot
-$YtDlp         = Join-Path $ProjectRoot 'tools\yt-dlp.exe'
-$ProxyScript   = Join-Path $ProjectRoot 'proxy\doh_proxy.py'
-# Папка Загрузки/Downloads текущего пользователя (работает на любом языке Windows)
-$shell         = New-Object -ComObject Shell.Application
-$DownloadDir   = $shell.Namespace('shell:Downloads').Self.Path
+$ProjectRoot = Split-Path -Parent $PSScriptRoot
+$YtDlp       = Join-Path $ProjectRoot 'tools\yt-dlp.exe'
+$ProxyScript = Join-Path $ProjectRoot 'proxy\doh_proxy.py'
+$shell       = New-Object -ComObject Shell.Application
+$DownloadDir = $shell.Namespace('shell:Downloads').Self.Path
 
-# FFmpeg: сначала ищем в системном пути, затем в папке проекта
 if (Test-Path 'C:\ffmpeg\bin\ffmpeg.exe') {
     $FfmpegDir = 'C:\ffmpeg\bin'
 } elseif (Test-Path (Join-Path $ProjectRoot 'tools\ffmpeg\ffmpeg.exe')) {
@@ -21,18 +19,281 @@ if (Test-Path 'C:\ffmpeg\bin\ffmpeg.exe') {
 } else {
     $FfmpegDir = $null
 }
-$ZapretBat     = Join-Path $ProjectRoot 'zapret\general (ALT11).bat'
+$ZapretBat = Join-Path $ProjectRoot 'zapret\general (ALT11).bat'
 # ------------------------------------------------------------
 
-function Write-Header {
-    param([string]$Text)
-    Write-Host ''
-    Write-Host ('═' * 58) -ForegroundColor DarkCyan
-    Write-Host "  $Text" -ForegroundColor Cyan
-    Write-Host ('═' * 58) -ForegroundColor DarkCyan
-    Write-Host ''
+# ---------------- UTF-8 + VT (ANSI) ----------------
+try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch { }
+try {
+    if (-not ('ConsoleVT' -as [type])) {
+        Add-Type -TypeDefinition @'
+using System;
+using System.Runtime.InteropServices;
+public static class ConsoleVT {
+    [DllImport("kernel32.dll", SetLastError = true)]
+    public static extern IntPtr GetStdHandle(int nStdHandle);
+    [DllImport("kernel32.dll", SetLastError = true)]
+    public static extern bool GetConsoleMode(IntPtr hConsoleHandle, out uint lpMode);
+    [DllImport("kernel32.dll", SetLastError = true)]
+    public static extern bool SetConsoleMode(IntPtr hConsoleHandle, uint dwMode);
+    public static void Enable() {
+        IntPtr h = GetStdHandle(-11);
+        uint mode;
+        if (GetConsoleMode(h, out mode)) SetConsoleMode(h, mode | 0x0004);
+    }
+}
+'@
+        [ConsoleVT]::Enable()
+    }
+} catch { }
+
+# ---------------- палитра ----------------
+$script:ESC = [char]27
+function Esc([string]$seq) { return "$($script:ESC)[$seq" }
+function Fg([string]$rgb)  { return "$($script:ESC)[38;2;${rgb}m" }
+function Bg([string]$rgb)  { return "$($script:ESC)[48;2;${rgb}m" }
+$script:RESET = "$($script:ESC)[0m"
+
+$script:P = @{
+    bg      = '11;11;12'
+    panel   = '26;26;26'
+    blue    = '59;130;246'
+    white   = '245;245;245'
+    light   = '208;208;212'
+    gray    = '150;150;156'
+    dim     = '108;108;114'
+    faint   = '70;70;76'
+    red     = '229;72;77'
+    track   = '33;33;36'
+    logoRed = '226;45;38'
+    logoGray= '118;118;124'
 }
 
+# ---------------- состояние ----------------
+$script:qualities = @(
+    @{ Label = '144';  Kind = 'video'; Height = 144  },
+    @{ Label = '360';  Kind = 'video'; Height = 360  },
+    @{ Label = '720';  Kind = 'video'; Height = 720  },
+    @{ Label = '1080'; Kind = 'video'; Height = 1080 },
+    @{ Label = 'MP3';  Kind = 'audio'; Height = 0    }
+)
+$script:url           = ''
+$script:qIdx          = 3
+$script:state         = 'input'
+$script:progress      = 0.0
+$script:logs          = New-Object System.Collections.ArrayList
+$script:progressLogId = $null
+$script:lastSize      = ''
+
+function New-Pad([int]$n) { if ($n -le 0) { return '' } return (' ' * $n) }
+
+function Add-Log {
+    param([string]$Text, [string]$Tag = 'info')
+    [void]$script:logs.Add([pscustomobject]@{
+        Time = (Get-Date -Format 'HH:mm:ss')
+        Tag  = $Tag
+        Text = $Text
+        Id   = [guid]::NewGuid().ToString('N')
+    })
+    while ($script:logs.Count -gt 300) { $script:logs.RemoveAt(0) }
+}
+
+function Update-ProgressLog([string]$Text) {
+    if (-not $script:progressLogId) { return }
+    for ($i = 0; $i -lt $script:logs.Count; $i++) {
+        if ($script:logs[$i].Id -eq $script:progressLogId) { $script:logs[$i].Text = $Text; return }
+    }
+    [void]$script:logs.Add([pscustomobject]@{
+        Time = (Get-Date -Format 'HH:mm:ss')
+        Tag  = 'download'
+        Text = $Text
+        Id   = $script:progressLogId
+    })
+}
+
+function Fmt1([double]$v) {
+    return [string]::Format([Globalization.CultureInfo]::InvariantCulture, '{0:0.0}', $v)
+}
+
+# ---------------- рендер ----------------
+function Render-Ui {
+    try {
+        $W = [Console]::WindowWidth
+        $H = [Console]::WindowHeight
+    } catch { return }
+    if ($W -le 0 -or $H -le 0) { return }
+    $script:lastSize = "$W x $H"
+
+    $P = $script:P
+    $out = New-Object System.Text.StringBuilder
+    [void]$out.Append((Esc 'H'))
+    [void]$out.Append((Bg $P.bg))
+    [void]$out.Append((Esc '2J'))
+
+    if ($W -lt 50 -or $H -lt 16) {
+        $msg = 'Увеличьте окно терминала'
+        $pad = New-Pad ([Math]::Max(0, [int](($W - $msg.Length) / 2)))
+        [void]$out.Append('')
+        [void]$out.Append($pad + (Fg $P.faint) + $msg + $script:RESET)
+        [Console]::Write($out.ToString())
+        return
+    }
+
+    $rows = New-Object System.Collections.Generic.List[string]
+    $margin = 2
+    $logW = [Math]::Max(20, $W - 2 * $margin)
+    $logLines = [Math]::Max(3, [Math]::Min(10, $H - 18))
+    $compact = $W -lt 78
+
+    # --- логотип ---
+    if ($compact) {
+        $logoText = '► yt-dlp'
+        $pad = New-Pad ([Math]::Max(0, [int](($W - $logoText.Length) / 2)))
+        $rows.Add($pad + (Fg $P.logoRed) + '►' + $script:RESET + ' ' + (Fg $P.white) + 'yt-dlp' + $script:RESET)
+    } else {
+        $glyphs = @{
+            'y' = @('██  ██','██  ██',' ████ ','  ██  ','  ██  ')
+            't' = @('██████','  ██  ','  ██  ','  ██  ','  ██  ')
+            '-' = @('      ','      ','██████','      ','      ')
+            'd' = @('█████ ','██  ██','██  ██','██  ██','█████ ')
+            'l' = @('██    ','██    ','██    ','██    ','██████')
+            'p' = @('█████ ','██  ██','█████ ','██    ','██    ')
+        }
+        $order = @('y','t','-','d','l','p')
+        $colr  = @($P.logoGray, $P.logoGray, $P.white, $P.white, $P.white, $P.white)
+        for ($r = 0; $r -lt 5; $r++) {
+            $s = New-Pad ([Math]::Max(0, [int](($W - 52) / 2)))
+            switch ($r) {
+                0 { $s += (Fg $P.logoRed) + ' ███ ' + $script:RESET }
+                1 { $s += (Fg $P.logoRed) + '█████' + $script:RESET }
+                2 { $s += (Fg $P.logoRed) + '██' + (Bg $P.logoRed) + (Fg $P.white) + '►' + $script:RESET + (Fg $P.logoRed) + '██' + $script:RESET }
+                3 { $s += (Fg $P.logoRed) + '█████' + $script:RESET }
+                4 { $s += (Fg $P.logoRed) + ' ███ ' + $script:RESET }
+            }
+            $s += ' '
+            for ($g = 0; $g -lt $order.Count; $g++) {
+                $s += (Fg $colr[$g]) + $glyphs[$order[$g]][$r] + $script:RESET
+                if ($g -lt $order.Count - 1) { $s += '  ' }
+            }
+            $rows.Add($s)
+        }
+    }
+
+    $rows.Add('')
+
+    # --- поле ввода ---
+    $inputW = [Math]::Max(30, [Math]::Min([int]($W * 0.68), 96))
+    $inputW = [Math]::Min($inputW, $W - 2)
+    $inner = $inputW - 2
+    $padL = New-Pad ([Math]::Max(0, [int](($W - $inputW) / 2)))
+    if ([string]::IsNullOrEmpty($script:url)) {
+        $shown = 'Вставьте ссылку на видео с YouTube...'
+        $textColor = $P.dim
+    } else {
+        $shown = $script:url
+        $textColor = $P.light
+        if ($shown.Length -gt $inner) { $shown = '…' + $shown.Substring($shown.Length - $inner + 1) }
+    }
+    if ($shown.Length -gt $inner) { $shown = $shown.Substring(0, [Math]::Max(0, $inner - 1)) + '…' }
+    $fill = [Math]::Max(0, $inner - $shown.Length)
+    $rows.Add($padL + (Bg $P.panel) + (Fg $P.blue) + '▌' + (Fg $textColor) + ' ' + $shown + (' ' * $fill) + $script:RESET)
+
+    $rows.Add('')
+
+    # --- качество ---
+    $sep = '  '
+    if ($W -lt 50) { $sep = '' }
+    $btnPlain = (($script:qualities | ForEach-Object { '[ ' + $_.Label + ' ]' }) -join $sep)
+    $btnPad = New-Pad ([Math]::Max(0, [int](($W - $btnPlain.Length) / 2)))
+    $btnStr = ''
+    for ($i = 0; $i -lt $script:qualities.Count; $i++) {
+        $b = '[ ' + $script:qualities[$i].Label + ' ]'
+        if ($i -eq $script:qIdx) {
+            $btnStr += (Bg $P.white) + (Fg '11;11;12') + $b + $script:RESET
+        } else {
+            $btnStr += (Fg $P.gray) + $b + $script:RESET
+        }
+        if ($i -lt $script:qualities.Count - 1) { $btnStr += $sep }
+    }
+    $rows.Add($btnPad + $btnStr)
+
+    $rows.Add('')
+
+    # --- логи ---
+    $visible = @()
+    if ($script:logs.Count -gt 0) {
+        $start = [Math]::Max(0, $script:logs.Count - $logLines)
+        for ($i = $start; $i -lt $script:logs.Count; $i++) { $visible += $script:logs[$i] }
+    }
+    $logPadL = New-Pad $margin
+    for ($i = 0; $i -lt $logLines; $i++) {
+        if ($i -lt $visible.Count) {
+            $l = $visible[$i]
+            $timeStr = '[' + $l.Time + ']'
+            $tagStr  = '[' + $l.Tag + ']'
+            $tagColor = $P.gray
+            if ($l.Tag -eq 'download') { $tagColor = $P.blue }
+            elseif ($l.Tag -eq 'error') { $tagColor = $P.red }
+            $msgColor = $P.light
+            if ($l.Tag -eq 'download') { $msgColor = $P.white }
+            elseif ($l.Tag -eq 'error') { $msgColor = $P.red }
+            $avail = $logW - ($timeStr.Length + 1 + $tagStr.Length + 1)
+            $msg = [string]$l.Text
+            if ($msg.Length -gt $avail) { $msg = $msg.Substring(0, [Math]::Max(0, $avail - 1)) + '…' }
+            $rows.Add($logPadL + (Fg $P.dim) + $timeStr + $script:RESET + ' ' +
+                      (Fg $tagColor) + $tagStr + $script:RESET + ' ' +
+                      (Fg $msgColor) + $msg + $script:RESET)
+        } else {
+            $rows.Add('')
+        }
+    }
+
+    $rows.Add('')
+
+    # --- прогресс ---
+    $pctStr = (Fmt1 ([double]$script:progress)) + '%'
+    $pctW = 8
+    $barW = [Math]::Max(10, $W - 2 * $margin - $pctW)
+    $fillW = [int][Math]::Round($barW * [double]$script:progress / 100.0)
+    if ($fillW -lt 0) { $fillW = 0 }
+    if ($fillW -gt $barW) { $fillW = $barW }
+    $bar = (Fg $P.blue) + ('█' * $fillW) + $script:RESET + (Fg $P.track) + ('█' * ($barW - $fillW)) + $script:RESET
+    $pctPad = New-Pad ([Math]::Max(0, $pctW - $pctStr.Length))
+    $rows.Add((New-Pad $margin) + $bar + $pctPad + (Fg $P.white) + $pctStr + $script:RESET)
+
+    $rows.Add('')
+
+    # --- подсказка ---
+    if ($script:state -eq 'downloading') {
+        $hint = 'Скачивание...  не закрывайте окно'
+    } elseif ($script:state -eq 'done') {
+        $hint = 'Enter — новое видео     Esc — выход'
+    } elseif ($W -lt 78) {
+        $hint = '← → качество    Enter — скачать    Esc — выход'
+    } else {
+        $hint = '← → качество     Enter — скачать     Ctrl+V — вставить     Esc — выход'
+    }
+    if ($hint.Length -gt $W - 2) { $hint = $hint.Substring(0, [Math]::Max(0, $W - 3)) + '…' }
+    $rows.Add((New-Pad ([Math]::Max(0, [int](($W - $hint.Length) / 2)))) + (Fg $P.faint) + $hint + $script:RESET)
+
+    # --- вывод ---
+    $contentH = $rows.Count
+    $topPad = [Math]::Max(0, [int][Math]::Floor(($H - $contentH) / 2))
+    $sb = $out
+    [void]$sb.Append("`n" * $topPad)
+    for ($i = 0; $i -lt $rows.Count; $i++) {
+        [void]$sb.Append($rows[$i])
+        [void]$sb.Append((Bg $P.bg))
+        [void]$sb.Append((Esc 'K'))
+        if ($i -lt $rows.Count - 1) { [void]$sb.Append("`n") }
+    }
+    [void]$sb.Append((Bg $P.bg))
+    [void]$sb.Append((Esc 'J'))
+    [void]$sb.Append($script:RESET)
+    [Console]::Write($sb.ToString())
+}
+
+# ---------------- сеть / процесс ----------------
 function Get-FreePort {
     $listener = [System.Net.Sockets.TcpListener]::new([System.Net.IPAddress]::Loopback, 0)
     $listener.Start()
@@ -55,137 +316,140 @@ function Wait-Port {
     return $false
 }
 
-function Get-VideoUrl {
-    while ($true) {
-        $raw = Read-Host '  Вставьте ссылку на видео (youtube.com или youtu.be)'
-        if ([string]::IsNullOrWhiteSpace($raw)) {
-            Write-Host '  Ссылка пустая, попробуйте ещё раз.' -ForegroundColor Yellow
-            continue
-        }
-        $url = $raw.Trim()
-        if ($url -notmatch '^https?://') { $url = 'https://' + $url }
-        if ($url -match '^https?://(www\.|m\.|music\.)?(youtube\.com/(watch\?|shorts/|live/|embed/)|youtu\.be/)[\w\-]+') {
-            return $url
-        }
-        Write-Host '  Это не похоже на ссылку YouTube. Примеры:' -ForegroundColor Yellow
-        Write-Host '    https://www.youtube.com/watch?v=uvCxZ-Kv1q4' -ForegroundColor DarkGray
-        Write-Host '    https://youtu.be/uvCxZ-Kv1q4' -ForegroundColor DarkGray
-    }
-}
-
-function Get-FormatChoice {
-    while ($true) {
-        Write-Host ''
-        Write-Host '  Выберите формат:' -ForegroundColor Cyan
-        Write-Host '    1) 144p' -ForegroundColor White
-        Write-Host '    2) 360p' -ForegroundColor White
-        Write-Host '    3) 720p' -ForegroundColor White
-        Write-Host '    4) 1080p' -ForegroundColor White
-        Write-Host '    5) только аудио (mp3)' -ForegroundColor White
-        Write-Host ''
-        $choice = Read-Host '  Ваш выбор [1-5]'
-        switch ($choice.Trim().ToLower()) {
-            { $_ -in '1', '144', '144p' }                { return @{ Kind = 'video'; Height = 144 } }
-            { $_ -in '2', '360', '360p' }                { return @{ Kind = 'video'; Height = 360 } }
-            { $_ -in '3', '720', '720p' }                { return @{ Kind = 'video'; Height = 720 } }
-            { $_ -in '4', '1080', '1080p' }              { return @{ Kind = 'video'; Height = 1080 } }
-            { $_ -in '5', 'audio', 'аудио', 'mp3' }      { return @{ Kind = 'audio'; Height = 0 } }
-            default { Write-Host '  Введите 1, 2, 3, 4 или 5.' -ForegroundColor Yellow; Start-Sleep -Seconds 1 }
-        }
-    }
-}
-
 function Test-ZapretRunning {
     $proc = Get-CimInstance Win32_Process -Filter "Name='winws.exe'" -ErrorAction SilentlyContinue
     return $null -ne $proc
 }
 
-function Start-Zapret {
-    if (-not (Test-Path $ZapretBat)) {
-        throw "Не найден файл запуска zapret: $ZapretBat`nПоложите папку zapret рядом со скриптом."
-    }
-    Write-Host "  Запускаю zapret ..." -ForegroundColor Cyan
-    Start-Process -FilePath $ZapretBat -WindowStyle Hidden -ErrorAction Stop | Out-Null
-
-    $deadline = (Get-Date).AddSeconds(30)
-    while ((Get-Date) -lt $deadline) {
-        if (Test-ZapretRunning) {
-            Write-Host '  zapret запущен (winws.exe активен).' -ForegroundColor Green
-            return $true
-        }
-        Start-Sleep -Seconds 1
-    }
-    throw 'Не удалось дождаться запуска winws.exe (zapret).'
+function ConvertTo-ArgString([string]$a) {
+    if ($null -eq $a) { return '""' }
+    if ($a -match '[\s"]') { return '"' + ($a -replace '"', '\"') + '"' }
+    return $a
 }
 
-function Download-OneVideo {
-    Write-Host ''
-    $url = Get-VideoUrl
-    $format = Get-FormatChoice
+function Handle-YtDlpLine([string]$line) {
+    if ([string]::IsNullOrWhiteSpace($line)) { return }
 
-    # Проверка файлов
+    if ($line -match '^\[download\]\s+([\d.]+)%\s+of\s+~?\s*([\d.]+)([KMGT]?i?B)(.*)$') {
+        $pct  = [double]$Matches[1]
+        $size = [double]$Matches[2]
+        $unit = $Matches[3]
+        $rest = $Matches[4]
+        $script:progress = $pct
+        $down = $size * $pct / 100.0
+        $speed = ''
+        if ($rest -match 'at\s+([\d.]+)\s*([KMGT]?i?B/s)') {
+            $speed = ' at ' + (Fmt1 ([double]$Matches[1])) + ' ' + $Matches[2]
+        }
+        $text = (Fmt1 $down) + ' ' + $unit + ' / ' + (Fmt1 $size) + ' ' + $unit + ' (' + (Fmt1 $pct) + '%)' + $speed
+        Update-ProgressLog $text
+        return
+    }
+
+    if ($line -match '^\[download\]\s+Destination:\s*(.+)$') {
+        Add-Log ('Saving to: "' + (Split-Path -Leaf $Matches[1].Trim()) + '"') 'info'
+        return
+    }
+
+    if ($line -match '^\[([\w-]+)\]\s*(.*)$') {
+        $tag = $Matches[1]
+        $msg = $Matches[2].Trim()
+        if ($tag -eq 'download') { Add-Log $msg 'download'; return }
+        if ($tag -in @('youtube', 'generic', 'extractor', 'webpage')) { $tag = 'info' }
+        Add-Log $msg $tag
+        return
+    }
+
+    if ($line -match '^ERROR:\s*(.*)$')   { Add-Log $Matches[1] 'error'; return }
+    if ($line -match '^WARNING:\s*(.*)$') { Add-Log $Matches[1] 'warn';  return }
+    Add-Log $line 'info'
+}
+
+function Read-OutputFile([string]$Path, [int]$From) {
+    if (-not (Test-Path -LiteralPath $Path)) { return $From }
+    try {
+        $lines = @(Get-Content -LiteralPath $Path -Encoding UTF8 -ErrorAction Stop)
+    } catch { return $From }
+    for ($i = $From; $i -lt $lines.Count; $i++) { Handle-YtDlpLine $lines[$i] }
+    return $lines.Count
+}
+
+# ---------------- скачивание ----------------
+function Start-Download {
+    $u = $script:url.Trim()
+    if ([string]::IsNullOrWhiteSpace($u)) {
+        Add-Log 'Введите ссылку на видео' 'error'
+        return
+    }
+    if ($u -notmatch '^https?://') { $u = 'https://' + $u }
+    if ($u -notmatch '^https?://(www\.|m\.|music\.)?(youtube\.com/(watch\?|shorts/|live/|embed/)|youtu\.be/)[\w\-]+') {
+        Add-Log 'Это не похоже на ссылку YouTube' 'error'
+        return
+    }
+    $script:url = $u
+
     foreach ($p in @($YtDlp, $ProxyScript, $ZapretBat)) {
-        if (-not (Test-Path $p)) {
-            Write-Host "  ОШИБКА: Не найден файл: $p" -ForegroundColor Red
-            Write-Host '  Положите yt-dlp.exe в tools/, а папку zapret рядом со скриптом.' -ForegroundColor Yellow
-            return $false
+        if (-not (Test-Path -LiteralPath $p)) {
+            Add-Log ('Не найден файл: ' + $p) 'error'
+            return
         }
     }
     if (-not $FfmpegDir -or -not (Test-Path (Join-Path $FfmpegDir 'ffmpeg.exe'))) {
-        Write-Host '  ОШИБКА: Не найден ffmpeg.' -ForegroundColor Red
-        Write-Host '  Положите ffmpeg.exe в C:\ffmpeg\bin\ или в tools\ffmpeg\.' -ForegroundColor Yellow
-        return $false
+        Add-Log 'Не найден ffmpeg.exe (C:\ffmpeg\bin или tools\ffmpeg)' 'error'
+        return
     }
-    if (-not (Test-Path $DownloadDir)) { New-Item -ItemType Directory -Path $DownloadDir | Out-Null }
+    if (-not (Test-Path -LiteralPath $DownloadDir)) {
+        New-Item -ItemType Directory -Path $DownloadDir -Force | Out-Null
+    }
 
-    # --- проверка/запуск zapret ---
+    $fmt = $script:qualities[$script:qIdx]
+    $script:state = 'downloading'
+    $script:progress = 0.0
+    $script:progressLogId = [guid]::NewGuid().ToString('N')
+    Add-Log ('Качество: ' + $fmt.Label) 'info'
+    Render-Ui
+
+    $ok = $false
     $zapretStartedByUs = $false
     $zapretProc = $null
-    if (-not (Test-ZapretRunning)) {
-        Write-Host "  Запускаю zapret из $ZapretBat ..." -ForegroundColor Cyan
-        Start-Process -FilePath $ZapretBat -WindowStyle Hidden -ErrorAction Stop | Out-Null
-        $deadline = (Get-Date).AddSeconds(30)
-        while ((Get-Date) -lt $deadline) {
-            $proc = Get-CimInstance Win32_Process -Filter "Name='winws.exe'" -ErrorAction SilentlyContinue
-            if ($proc) {
-                $zapretProc = $proc
-                $zapretStartedByUs = $true
-                Write-Host '  zapret запущен.' -ForegroundColor Green
-                break
-            }
-            Start-Sleep -Seconds 1
-        }
-        if (-not $zapretStartedByUs) {
-            Write-Host '  ОШИБКА: Не удалось запустить zapret.' -ForegroundColor Red
-            return $false
-        }
-    } else {
-        Write-Host '  zapret уже запущен.' -ForegroundColor DarkGray
-    }
-
-    # --- запуск локального DoH-прокси ---
-    $port = Get-FreePort
-    $proxyLog = Join-Path $env:TEMP "ytdlp_doh_proxy_$port.log"
-    $py = (Get-Command py -ErrorAction SilentlyContinue)
-    if ($py) {
-        $proxyProc = Start-Process -FilePath $py.Source `
-            -ArgumentList @('-3', $ProxyScript, "$port") `
-            -WindowStyle Hidden -PassThru `
-            -RedirectStandardError $proxyLog -RedirectStandardOutput ($proxyLog + '.out')
-    } else {
-        $proxyProc = Start-Process -FilePath 'python' `
-            -ArgumentList @($ProxyScript, "$port") `
-            -WindowStyle Hidden -PassThru `
-            -RedirectStandardError $proxyLog -RedirectStandardOutput ($proxyLog + '.out')
-    }
+    $proxyProc  = $null
+    $outFile = $null; $errFile = $null; $proxyOut = $null; $proxyErr = $null
 
     try {
-        if (-not (Wait-Port -Port $port -TimeoutSec 20)) {
-            Write-Host '  ОШИБКА: Не удалось запустить DoH-прокси.' -ForegroundColor Red
-            if (Test-Path $proxyLog) { Get-Content $proxyLog -Tail 10 }
-            return $false
+        if (-not (Test-ZapretRunning)) {
+            Add-Log 'Запуск zapret...' 'info'
+            Render-Ui
+            Start-Process -FilePath $ZapretBat -WindowStyle Hidden -ErrorAction Stop | Out-Null
+            $deadline = (Get-Date).AddSeconds(30)
+            while ((Get-Date) -lt $deadline) {
+                $proc = Get-CimInstance Win32_Process -Filter "Name='winws.exe'" -ErrorAction SilentlyContinue
+                if ($proc) { $zapretProc = $proc; $zapretStartedByUs = $true; break }
+                Start-Sleep -Milliseconds 500
+            }
+            if (-not $zapretStartedByUs) { Add-Log 'Не удалось запустить zapret' 'error'; return }
+            Add-Log 'zapret запущен' 'info'
+        } else {
+            Add-Log 'zapret уже запущен' 'info'
         }
-        Write-Host "  Прокси запущен на 127.0.0.1:$port" -ForegroundColor DarkGray
+
+        $port = Get-FreePort
+        if (Get-Command py -ErrorAction SilentlyContinue) {
+            $pyExe = 'py'; $pyArgs = @('-3', $ProxyScript, "$port")
+        } elseif (Get-Command python -ErrorAction SilentlyContinue) {
+            $pyExe = 'python'; $pyArgs = @($ProxyScript, "$port")
+        } else {
+            Add-Log 'Не найден Python (py / python)' 'error'; return
+        }
+        $proxyOut = Join-Path ([IO.Path]::GetTempPath()) ("ytdlp_proxy_$port.out")
+        $proxyErr = Join-Path ([IO.Path]::GetTempPath()) ("ytdlp_proxy_$port.err")
+        $pyArgStr = (($pyArgs | ForEach-Object { ConvertTo-ArgString $_ }) -join ' ')
+        $proxyProc = Start-Process -FilePath $pyExe -ArgumentList $pyArgStr -WindowStyle Hidden -PassThru `
+            -RedirectStandardOutput $proxyOut -RedirectStandardError $proxyErr
+        Add-Log "DoH-прокси: 127.0.0.1:$port" 'info'
+        Render-Ui
+        if (-not (Wait-Port -Port $port -TimeoutSec 20)) {
+            Add-Log 'Не удалось запустить DoH-прокси' 'error'; return
+        }
 
         $argsList = @(
             '--proxy', "http://127.0.0.1:$port",
@@ -199,84 +463,141 @@ function Download-OneVideo {
             '--windows-filenames',
             '-o', (Join-Path $DownloadDir '%(title)s [%(id)s].%(ext)s')
         )
-        if ($FfmpegDir -and (Test-Path $FfmpegDir)) {
-            $argsList += @('--ffmpeg-location', $FfmpegDir)
-        }
-
-        if ($format.Kind -eq 'audio') {
+        if ($FfmpegDir -and (Test-Path $FfmpegDir)) { $argsList += @('--ffmpeg-location', $FfmpegDir) }
+        if ($fmt.Kind -eq 'audio') {
             $argsList += @('-f', 'ba/b', '-x', '--audio-format', 'mp3', '--audio-quality', '0')
-            Write-Host "  Скачиваю только аудио (mp3)..." -ForegroundColor Green
         } else {
-            $h = $format.Height
+            $h = $fmt.Height
             $selector = "bv*[height<=$h][ext=mp4][vcodec^=avc1]+ba[ext=m4a]/bv*[height<=$h]+ba/b[height<=$h]"
             $argsList += @('-f', $selector, '--merge-output-format', 'mp4')
-            Write-Host "  Скачиваю видео до ${h}p (mp4)..." -ForegroundColor Green
         }
+        $argsList += $u
 
-        $argsList += $url
+        $outFile = Join-Path ([IO.Path]::GetTempPath()) ("ytdlp_" + [guid]::NewGuid().ToString('N') + ".out")
+        $errFile = $outFile + '.err'
+        $argStr = (($argsList | ForEach-Object { ConvertTo-ArgString $_ }) -join ' ')
+
         $started = Get-Date
+        $yt = Start-Process -FilePath $YtDlp -ArgumentList $argStr -WindowStyle Hidden -PassThru `
+            -RedirectStandardOutput $outFile -RedirectStandardError $errFile
 
-        & $YtDlp @argsList
-        $exitCode = $LASTEXITCODE
-
-        if ($exitCode -ne 0) {
-            Write-Host "  yt-dlp завершился с ошибкой (код $exitCode)." -ForegroundColor Red
-            Write-Host '  Проверьте, что zapret запущен и интернет работает.' -ForegroundColor Yellow
-            return $false
-        } else {
-            $newFiles = Get-ChildItem $DownloadDir -File |
-                Where-Object { $_.LastWriteTime -ge $started -and $_.Extension -match '\.(mp4|mkv|webm|mp3|m4a)$' } |
-                Sort-Object LastWriteTime
-            Write-Host ''
-            Write-Host '════════════════════════════════════════════' -ForegroundColor Green
-            Write-Host '  ГОТОВО!' -ForegroundColor Green
-            Write-Host '════════════════════════════════════════════' -ForegroundColor Green
-            if ($newFiles) {
-                foreach ($f in $newFiles) {
-                    Write-Host ("  {0}" -f $f.FullName) -ForegroundColor Green
-                    Write-Host ("  {0:N1} МБ" -f ($f.Length / 1MB)) -ForegroundColor DarkGray
-                }
-            } else {
-                Write-Host '  Файл уже был скачан ранее.' -ForegroundColor Yellow
-            }
-            return $true
+        $readOut = 0; $readErr = 0
+        $lastRender = Get-Date
+        while (-not $yt.HasExited) {
+            $readOut = Read-OutputFile $outFile $readOut
+            $readErr = Read-OutputFile $errFile $readErr
+            $now = Get-Date
+            if (($now - $lastRender).TotalMilliseconds -ge 120) { Render-Ui; $lastRender = $now }
+            Start-Sleep -Milliseconds 80
         }
+        $readOut = Read-OutputFile $outFile $readOut
+        $readErr = Read-OutputFile $errFile $readErr
+
+        if ($yt.ExitCode -eq 0) {
+            $script:progress = 100.0
+            Add-Log 'Скачивание завершено' 'info'
+            $newFiles = @(Get-ChildItem -LiteralPath $DownloadDir -File -ErrorAction SilentlyContinue |
+                Where-Object { $_.LastWriteTime -ge $started -and $_.Extension -match '\.(mp4|mkv|webm|mp3|m4a)$' } |
+                Sort-Object LastWriteTime)
+            foreach ($f in $newFiles) {
+                Add-Log ('Сохранено: ' + $f.Name + ' (' + (Fmt1 ($f.Length / 1MB)) + ' МБ)') 'info'
+            }
+            $ok = $true
+        } else {
+            Add-Log ('yt-dlp завершился с ошибкой (код ' + $yt.ExitCode + ')') 'error'
+        }
+    }
+    catch {
+        Add-Log ('Ошибка: ' + $_.Exception.Message) 'error'
     }
     finally {
         if ($proxyProc -and -not $proxyProc.HasExited) {
-            Stop-Process -Id $proxyProc.Id -Force -ErrorAction SilentlyContinue
-            Write-Host '  Прокси остановлен.' -ForegroundColor DarkGray
+            try { Stop-Process -Id $proxyProc.Id -Force -ErrorAction SilentlyContinue } catch { }
         }
         if ($zapretStartedByUs -and $zapretProc) {
-            try {
-                Stop-Process -Id $zapretProc.ProcessId -Force -ErrorAction SilentlyContinue
-                Write-Host '  zapret остановлен.' -ForegroundColor DarkGray
-            } catch {
-                Write-Host '  Не удалось остановить zapret автоматически.' -ForegroundColor Yellow
-            }
-        } else {
-            Write-Host '  zapret оставлен запущенным.' -ForegroundColor DarkGray
+            try { Stop-Process -Id $zapretProc.ProcessId -Force -ErrorAction SilentlyContinue } catch { }
+            Add-Log 'zapret остановлен' 'info'
+        } elseif ($zapretProc -or (Test-ZapretRunning)) {
+            Add-Log 'zapret оставлен запущенным' 'info'
         }
-        Remove-Item $proxyLog, ($proxyLog + '.out') -ErrorAction SilentlyContinue
+        foreach ($f in @($outFile, $errFile, $proxyOut, $proxyErr)) {
+            if ($f) { Remove-Item -LiteralPath $f -Force -ErrorAction SilentlyContinue }
+        }
+        if ($ok) { $script:state = 'done' } else { $script:state = 'input' }
+        Render-Ui
     }
 }
 
-# --------------------------- точка входа ---------------------------
-Write-Header "YouTube Downloader v$script:AppVersion (zapret + DoH)"
-Write-Host "  Папка загрузки: $DownloadDir" -ForegroundColor DarkGray
-Write-Host "  FFmpeg: $FfmpegDir" -ForegroundColor DarkGray
-Write-Host ""
+# ---------------- запуск ----------------
+Add-Log 'Проверка зависимостей' 'info'
+if (Test-Path -LiteralPath $YtDlp) { Add-Log 'yt-dlp найден' 'info' } else { Add-Log 'yt-dlp.exe не найден в tools\' 'error' }
+if ($FfmpegDir) { Add-Log ('ffmpeg: ' + $FfmpegDir) 'info' } else { Add-Log 'ffmpeg не найден' 'error' }
+if (Test-Path -LiteralPath $ZapretBat) { Add-Log 'zapret готов' 'info' } else { Add-Log 'zapret не найден' 'error' }
+Add-Log 'Вставьте ссылку и нажмите Enter' 'info'
 
-while ($true) {
-    $success = Download-OneVideo
-    Write-Host ""
-    $again = Read-Host '  Скачать ещё одно видео? (д/н)'
-    if ($again.Trim().ToLower() -notin @('д', 'da', 'y', 'yes')) {
-        break
+try {
+    try { [Console]::CursorVisible = $false } catch { }
+    try { [Console]::TreatControlCAsInput = $true } catch { }
+    try { [Console]::Title = 'YouTube Downloader' } catch { }
+    [Console]::Write((Esc '?1049h') + (Esc '?25l'))
+
+    Render-Ui
+
+    while ($true) {
+        $curSize = "$([Console]::WindowWidth) x $([Console]::WindowHeight)"
+        if ($curSize -ne $script:lastSize) { Render-Ui }
+
+        if (-not [Console]::KeyAvailable) { Start-Sleep -Milliseconds 90; continue }
+        $key = [Console]::ReadKey($true)
+        $k = $key.Key
+        $ctrl = ($key.Modifiers -band [ConsoleModifiers]::Control) -ne 0
+
+        if ($k -eq [ConsoleKey]::Escape -or ($ctrl -and $k -eq [ConsoleKey]::C)) { break }
+
+        if ($script:state -eq 'done') {
+            if ($k -eq [ConsoleKey]::Enter) {
+                $script:url = ''
+                $script:progress = 0.0
+                $script:progressLogId = $null
+                $script:state = 'input'
+                Add-Log 'Вставьте ссылку и нажмите Enter' 'info'
+            }
+            continue
+        }
+        if ($script:state -ne 'input') { continue }
+
+        if ($k -eq [ConsoleKey]::LeftArrow) {
+            if ($script:qIdx -gt 0) { $script:qIdx-- }
+            continue
+        }
+        if ($k -eq [ConsoleKey]::RightArrow) {
+            if ($script:qIdx -lt $script:qualities.Count - 1) { $script:qIdx++ }
+            continue
+        }
+        if ($k -eq [ConsoleKey]::Tab) {
+            $script:qIdx = ($script:qIdx + 1) % $script:qualities.Count
+            continue
+        }
+        if ($k -eq [ConsoleKey]::Enter) { Start-Download; continue }
+        if ($k -eq [ConsoleKey]::Backspace) {
+            if ($script:url.Length -gt 0) { $script:url = $script:url.Substring(0, $script:url.Length - 1) }
+            continue
+        }
+        if ($ctrl -and $k -eq [ConsoleKey]::V) {
+            try { $clip = Get-Clipboard -Raw -ErrorAction Stop } catch { $clip = '' }
+            if ($clip) { $script:url += (($clip -replace '[\r\n]+', ' ').Trim()) }
+            continue
+        }
+        if ($key.KeyChar -and [int]$key.KeyChar -ge 32 -and [int]$key.KeyChar -ne 127) {
+            if ($script:url.Length -lt 600) { $script:url += $key.KeyChar }
+        }
     }
-    Write-Host ""
 }
-
-Write-Host ''
-Write-Host '  До свидания!' -ForegroundColor Cyan
-Write-Host ''
+finally {
+    [Console]::Write($script:RESET + (Esc '?25h') + (Esc '?1049l'))
+    try { [Console]::TreatControlCAsInput = $false } catch { }
+    try { [Console]::CursorVisible = $true } catch { }
+    Write-Host ''
+    Write-Host '  До свидания!' -ForegroundColor DarkGray
+    Write-Host ''
+}
