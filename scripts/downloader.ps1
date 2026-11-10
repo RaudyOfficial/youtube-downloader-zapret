@@ -80,6 +80,7 @@ $script:qualities = @(
 $script:url           = ''
 $script:qIdx          = 3
 $script:state         = 'input'
+$script:focus         = 'url'
 $script:progress      = 0.0
 $script:logs          = New-Object System.Collections.ArrayList
 $script:progressLogId = $null
@@ -186,17 +187,21 @@ function Render-Ui {
     $inputW = [Math]::Min($inputW, $W - 2)
     $inner = $inputW - 2
     $padL = New-Pad ([Math]::Max(0, [int](($W - $inputW) / 2)))
+    $urlFocus = ($script:state -eq 'input' -and $script:focus -eq 'url')
     if ([string]::IsNullOrEmpty($script:url)) {
         $shown = 'Вставьте ссылку на видео с YouTube...'
         $textColor = $P.dim
     } else {
         $shown = $script:url
+        if ($urlFocus) { $shown += '▏' }
         $textColor = $P.light
         if ($shown.Length -gt $inner) { $shown = '…' + $shown.Substring($shown.Length - $inner + 1) }
     }
     if ($shown.Length -gt $inner) { $shown = $shown.Substring(0, [Math]::Max(0, $inner - 1)) + '…' }
     $fill = [Math]::Max(0, $inner - $shown.Length)
-    $rows.Add($padL + (Bg $P.panel) + (Fg $P.blue) + '▌' + (Fg $textColor) + ' ' + $shown + (' ' * $fill) + $script:RESET)
+    $barColor = $P.track
+    if ($urlFocus) { $barColor = $P.blue }
+    $rows.Add($padL + (Bg $P.panel) + (Fg $barColor) + '▌' + (Fg $textColor) + ' ' + $shown + (' ' * $fill) + $script:RESET)
 
     $rows.Add('')
 
@@ -206,10 +211,15 @@ function Render-Ui {
     $btnPlain = (($script:qualities | ForEach-Object { '[ ' + $_.Label + ' ]' }) -join $sep)
     $btnPad = New-Pad ([Math]::Max(0, [int](($W - $btnPlain.Length) / 2)))
     $btnStr = ''
+    $qualityFocus = ($script:state -eq 'input' -and $script:focus -eq 'quality')
     for ($i = 0; $i -lt $script:qualities.Count; $i++) {
         $b = '[ ' + $script:qualities[$i].Label + ' ]'
         if ($i -eq $script:qIdx) {
-            $btnStr += (Bg $P.white) + (Fg '11;11;12') + $b + $script:RESET
+            if ($qualityFocus) {
+                $btnStr += (Bg $P.white) + (Fg '11;11;12') + $b + $script:RESET
+            } else {
+                $btnStr += (Bg '58;58;62') + (Fg $P.white) + $b + $script:RESET
+            }
         } else {
             $btnStr += (Fg $P.gray) + $b + $script:RESET
         }
@@ -269,9 +279,12 @@ function Render-Ui {
     } elseif ($script:state -eq 'done') {
         $hint = 'Enter — новое видео     Esc — выход'
     } elseif ($W -lt 78) {
-        $hint = '← → качество    Enter — скачать    Esc — выход'
+        if ($script:focus -eq 'quality') { $hint = '← → качество   Tab — ссылка   Enter — скачать   Esc — выход' }
+        else { $hint = 'Tab — качество   Enter — скачать   Esc — выход' }
+    } elseif ($script:focus -eq 'quality') {
+        $hint = '← → качество     Tab — к ссылке     Enter — скачать     Esc — выход'
     } else {
-        $hint = '← → качество     Enter — скачать     Ctrl+V — вставить     Esc — выход'
+        $hint = 'Tab — к выбору качества     Enter — скачать     Ctrl+V — вставить     Esc — выход'
     }
     if ($hint.Length -gt $W - 2) { $hint = $hint.Substring(0, [Math]::Max(0, $W - 3)) + '…' }
     $rows.Add((New-Pad ([Math]::Max(0, [int](($W - $hint.Length) / 2)))) + (Fg $P.faint) + $hint + $script:RESET)
@@ -533,7 +546,7 @@ Add-Log 'Проверка зависимостей' 'info'
 if (Test-Path -LiteralPath $YtDlp) { Add-Log 'yt-dlp найден' 'info' } else { Add-Log 'yt-dlp.exe не найден в tools\' 'error' }
 if ($FfmpegDir) { Add-Log ('ffmpeg: ' + $FfmpegDir) 'info' } else { Add-Log 'ffmpeg не найден' 'error' }
 if (Test-Path -LiteralPath $ZapretBat) { Add-Log 'zapret готов' 'info' } else { Add-Log 'zapret не найден' 'error' }
-Add-Log 'Вставьте ссылку и нажмите Enter' 'info'
+Add-Log 'Вставьте ссылку · Tab — качество · Enter — скачать' 'info'
 
 try {
     try { [Console]::CursorVisible = $false } catch { }
@@ -547,10 +560,12 @@ try {
         $curSize = "$([Console]::WindowWidth) x $([Console]::WindowHeight)"
         if ($curSize -ne $script:lastSize) { Render-Ui }
 
-        if (-not [Console]::KeyAvailable) { Start-Sleep -Milliseconds 90; continue }
+        if (-not [Console]::KeyAvailable) { Start-Sleep -Milliseconds 60; continue }
+
         $key = [Console]::ReadKey($true)
         $k = $key.Key
         $ctrl = ($key.Modifiers -band [ConsoleModifiers]::Control) -ne 0
+        $changed = $false
 
         if ($k -eq [ConsoleKey]::Escape -or ($ctrl -and $k -eq [ConsoleKey]::C)) { break }
 
@@ -560,37 +575,57 @@ try {
                 $script:progress = 0.0
                 $script:progressLogId = $null
                 $script:state = 'input'
-                Add-Log 'Вставьте ссылку и нажмите Enter' 'info'
+                $script:focus = 'url'
+                $changed = $true
             }
-            continue
         }
-        if ($script:state -ne 'input') { continue }
+        elseif ($script:state -eq 'input') {
+            if ($k -eq [ConsoleKey]::Tab) {
+                if ($script:focus -eq 'url') { $script:focus = 'quality' } else { $script:focus = 'url' }
+                $changed = $true
+            }
+            elseif ($k -eq [ConsoleKey]::Enter) {
+                Start-Download
+                $changed = $true
+            }
+            elseif ($script:focus -eq 'url') {
+                if ($k -eq [ConsoleKey]::Backspace) {
+                    if ($script:url.Length -gt 0) {
+                        $script:url = $script:url.Substring(0, $script:url.Length - 1)
+                        $changed = $true
+                    }
+                }
+                elseif ($ctrl -and $k -eq [ConsoleKey]::V) {
+                    try { $clip = Get-Clipboard -Raw -ErrorAction Stop } catch { $clip = '' }
+                    if ($clip) {
+                        $script:url += (($clip -replace '[\r\n]+', ' ').Trim())
+                        $changed = $true
+                    }
+                }
+                elseif ($key.KeyChar -and [int]$key.KeyChar -ge 32 -and [int]$key.KeyChar -ne 127) {
+                    if ($script:url.Length -lt 600) {
+                        $script:url += $key.KeyChar
+                        $changed = $true
+                    }
+                }
+            }
+            else {
+                if ($k -eq [ConsoleKey]::LeftArrow) {
+                    if ($script:qIdx -gt 0) { $script:qIdx--; $changed = $true }
+                }
+                elseif ($k -eq [ConsoleKey]::RightArrow) {
+                    if ($script:qIdx -lt $script:qualities.Count - 1) { $script:qIdx++; $changed = $true }
+                }
+                elseif ($k -eq [ConsoleKey]::Home) {
+                    $script:qIdx = 0; $changed = $true
+                }
+                elseif ($k -eq [ConsoleKey]::End) {
+                    $script:qIdx = $script:qualities.Count - 1; $changed = $true
+                }
+            }
+        }
 
-        if ($k -eq [ConsoleKey]::LeftArrow) {
-            if ($script:qIdx -gt 0) { $script:qIdx-- }
-            continue
-        }
-        if ($k -eq [ConsoleKey]::RightArrow) {
-            if ($script:qIdx -lt $script:qualities.Count - 1) { $script:qIdx++ }
-            continue
-        }
-        if ($k -eq [ConsoleKey]::Tab) {
-            $script:qIdx = ($script:qIdx + 1) % $script:qualities.Count
-            continue
-        }
-        if ($k -eq [ConsoleKey]::Enter) { Start-Download; continue }
-        if ($k -eq [ConsoleKey]::Backspace) {
-            if ($script:url.Length -gt 0) { $script:url = $script:url.Substring(0, $script:url.Length - 1) }
-            continue
-        }
-        if ($ctrl -and $k -eq [ConsoleKey]::V) {
-            try { $clip = Get-Clipboard -Raw -ErrorAction Stop } catch { $clip = '' }
-            if ($clip) { $script:url += (($clip -replace '[\r\n]+', ' ').Trim()) }
-            continue
-        }
-        if ($key.KeyChar -and [int]$key.KeyChar -ge 32 -and [int]$key.KeyChar -ne 127) {
-            if ($script:url.Length -lt 600) { $script:url += $key.KeyChar }
-        }
+        if ($changed) { Render-Ui }
     }
 }
 finally {
