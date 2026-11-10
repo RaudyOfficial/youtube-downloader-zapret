@@ -52,8 +52,7 @@ function Show-MainMenu {
     Write-Host "  FFmpeg: $FfmpegDir" -ForegroundColor DarkGray
     Write-Host ""
     Write-MenuItem 1 "Скачать видео" "Вставьте ссылку и выберите качество"
-    Write-MenuItem 2 "Установить зависимости" "yt-dlp.exe и ffmpeg"
-    Write-MenuItem 3 "Версия программы" "Показать версию и информацию"
+    Write-MenuItem 2 "Версия программы" "Показать версию и информацию"
     Write-MenuItem 0 "Выход" "Закрыть программу"
     Write-Host ''
 }
@@ -302,33 +301,6 @@ function Download-Video {
     Read-Host '  Нажмите Enter для возврата в главное меню'
 }
 
-function Install-Dependencies {
-    Clear-Screen
-    Write-Header "Установка зависимостей"
-    Write-Host ''
-    Write-Host '  1) Скачать yt-dlp.exe -> tools\yt-dlp.exe' -ForegroundColor White
-    Write-Host '     Источник: https://github.com/yt-dlp/yt-dlp/releases' -ForegroundColor DarkGray
-    Write-Host ''
-    Write-Host '  2) Скачать ffmpeg -> tools\ffmpeg\ (ffmpeg.exe, ffplay.exe, ffprobe.exe)' -ForegroundColor White
-    Write-Host '     Альтернатива: установить в C:\ffmpeg\bin\ - скрипт найдёт автоматически' -ForegroundColor DarkGray
-    Write-Host '     Источник: https://www.ffmpeg.org/download.html' -ForegroundColor DarkGray
-    Write-Host ''
-    Write-MenuItem 0 "Назад" "Вернуться в главное меню"
-    Write-Host ''
-    $choice = Read-Host '  Ваш выбор [0-2]'
-    if ($choice -in '1') {
-        Write-Host ''
-        Write-Host '  Откройте в браузере: https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe' -ForegroundColor Cyan
-        Write-Host '  Положите файл в: tools\yt-dlp.exe' -ForegroundColor Cyan
-    } elseif ($choice -in '2') {
-        Write-Host ''
-        Write-Host '  Откройте в браузере: https://www.ffmpeg.org/download.html' -ForegroundColor Cyan
-        Write-Host '  Положите файлы в: tools\ffmpeg\  или установите в C:\ffmpeg\bin\' -ForegroundColor Cyan
-    }
-    Write-Host ''
-    Read-Host '  Нажмите Enter для возврата в меню'
-}
-
 function Show-Version {
     Clear-Screen
     Write-Header "Версия программы"
@@ -350,11 +322,10 @@ function Show-Version {
 # --------------------------- главный цикл ---------------------------
 while ($true) {
     Show-MainMenu
-    $choice = Read-Host '  Ваш выбор [0-3]'
+    $choice = Read-Host '  Ваш выбор [0-2]'
     switch ($choice.Trim()) {
         '1' { Download-Video }
-        '2' { Install-Dependencies }
-        '3' { Show-Version }
+        '2' { Show-Version }
         '0' {
             Write-Host ''
             Write-Host '  До свидания!' -ForegroundColor Cyan
