@@ -10,19 +10,19 @@
 | `scripts/launch.cmd` | Запуск двойным кликом (вызывает PowerShell) |
 | `proxy/doh_proxy.py` | Локальный DoH-прокси (обходит отравленный DNS) |
 | `tools/` | Сюда кладете `yt-dlp.exe` отдельно (не входит в репозиторий из-за размера) |
-| `tools/ffmpeg/` | Сюда кладете `ffmpeg.exe`, `ffplay.exe`, `ffprobe.exe` отдельно |
+| `tools/ffmpeg/` | Сюда кладете `ffmpeg.exe`, `ffplay.exe`, `ffprobe.exe`, если не установлен системно в `C:\ffmpeg\bin` |
 | `zapret/` | Рабочая конфигурация zapret (стратегия ALT11) |
 
 ## Быстрый старт
 
 1. **Склонируйте репозиторий** или скачайте ZIP и распакуйте в любую папку.
-2. **Скачайте недостающие утилиты** (они слишком велики для GitHub):
+2. **Скачайте yt-dlp.exe** (слишком велик для GitHub):
    - [yt-dlp.exe](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe) → положите в `tools\`
-   - [FFmpeg](https://www.ffmpeg.org/download.html) → положите `ffmpeg.exe`, `ffplay.exe`, `ffprobe.exe` в `tools\ffmpeg\`
-3. Дважды кликните по `scripts\launch.cmd`.
-4. Вставьте ссылку на видео (`youtube.com/watch?v=...` или `youtu.be/...`).
-5. Выберите качество: 144p / 360p / 720p / 1080p / только аудио (mp3).
-6. Видео появится в папке **Загрузки / Downloads текущего пользователя**.
+3. **FFmpeg (опционально)**: скрипт сам найдет его в `C:\ffmpeg\bin`, если установлен. Если нет — положите `ffmpeg.exe`, `ffplay.exe`, `ffprobe.exe` в `tools\ffmpeg\`.
+4. Дважды кликните по `scripts\launch.cmd`.
+5. Вставьте ссылку на видео (`youtube.com/watch?v=...` или `youtu.be/...`).
+6. Выберите качество: 144p / 360p / 720p / 1080p / только аудио (mp3).
+7. Видео появится в папке **Загрузки / Downloads текущего пользователя**.
 
 ## Как это работает
 
@@ -34,12 +34,13 @@
 
 - Windows 10 или 11
 - **Права администратора** — нужны для запуска zapret (он использует WinDivert для фильтрации сетевого трафика)
-- yt-dlp.exe и ffmpeg нужно скачать отдельно (ссылки в разделе «Быстрый старт»)
+- [yt-dlp.exe](https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe) — положите в `tools\`
+- FFmpeg — опционально, скрипт найдет его в `C:\ffmpeg\bin` или в `tools\ffmpeg\`
 
 ## Если что-то не работает
 
 - Убедитесь, что antivirus не блокирует `winws.exe` и `yt-dlp.exe`.
-- Если скрипт пишет, что не найден `ffmpeg.exe` — положите `ffmpeg.exe`, `ffplay.exe`, `ffprobe.exe` в папку `tools\ffmpeg\`.
+- Если скрипт пишет, что не найден `ffmpeg.exe` — установите его в `C:\ffmpeg\bin` или положите `ffmpeg.exe`, `ffplay.exe`, `ffprobe.exe` в папку `tools\ffmpeg\`.
 - Если youtube не открывается — проверьте, что в папке `zapret/` лежит `general (ALT11).bat` и все файлы из `bin/` и `lists/`.
 
 ## Используемые проекты

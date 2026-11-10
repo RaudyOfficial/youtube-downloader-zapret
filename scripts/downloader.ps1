@@ -11,7 +11,15 @@ $ProxyScript   = Join-Path $ProjectRoot 'proxy\doh_proxy.py'
 # Папка Загрузки/Downloads текущего пользователя (работает на любом языке Windows)
 $shell         = New-Object -ComObject Shell.Application
 $DownloadDir   = $shell.Namespace('shell:Downloads').Self.Path
-$FfmpegDir     = Join-Path $ProjectRoot 'tools\ffmpeg'
+
+# FFmpeg: сначала ищем в системном пути, затем в папке проекта
+if (Test-Path 'C:\ffmpeg\bin\ffmpeg.exe') {
+    $FfmpegDir = 'C:\ffmpeg\bin'
+} elseif (Test-Path (Join-Path $ProjectRoot 'tools\ffmpeg\ffmpeg.exe')) {
+    $FfmpegDir = Join-Path $ProjectRoot 'tools\ffmpeg'
+} else {
+    $FfmpegDir = $null
+}
 $ZapretBat     = Join-Path $ProjectRoot 'zapret\general (ALT11).bat'
 # ------------------------------------------------------------
 
@@ -115,8 +123,8 @@ $script:zapretProc        = $null
 foreach ($p in @($YtDlp, $ProxyScript, $ZapretBat)) {
     if (-not (Test-Path $p)) { throw "Не найден файл: $p`nПоложите yt-dlp.exe в tools/, а папку zapret рядом со скриптом." }
 }
-if (-not (Test-Path (Join-Path $FfmpegDir 'ffmpeg.exe'))) {
-    throw "Не найден ffmpeg: $FfmpegDir\ffmpeg.exe`nПоложите ffmpeg.exe, ffplay.exe, ffprobe.exe в tools\ffmpeg\"
+if (-not $FfmpegDir -or -not (Test-Path (Join-Path $FfmpegDir 'ffmpeg.exe'))) {
+    throw "Не найден ffmpeg. Положите ffmpeg.exe, ffplay.exe, ffprobe.exe в C:\ffmpeg\bin\ или в tools\ffmpeg\ рядом со скриптом."
 }
 if (-not (Test-Path $DownloadDir)) { New-Item -ItemType Directory -Path $DownloadDir | Out-Null }
 
