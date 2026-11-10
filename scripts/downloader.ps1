@@ -65,7 +65,6 @@ $script:P = @{
     faint   = '70;70;76'
     red     = '229;72;77'
     track   = '33;33;36'
-    logoRed = '226;45;38'
     logoGray= '118;118;124'
 }
 
@@ -148,9 +147,9 @@ function Render-Ui {
 
     # --- логотип ---
     if ($compact) {
-        $logoText = '► yt-dlp'
+        $logoText = 'YT-DLP'
         $pad = New-Pad ([Math]::Max(0, [int](($W - $logoText.Length) / 2)))
-        $rows.Add($pad + (Fg $P.logoRed) + '►' + $script:RESET + ' ' + (Fg $P.white) + 'yt-dlp' + $script:RESET)
+        $rows.Add($pad + (Fg $P.white) + $logoText + $script:RESET)
     } else {
         $glyphs = @{
             'y' = @('██  ██','██  ██',' ████ ','  ██  ','  ██  ')
@@ -163,15 +162,7 @@ function Render-Ui {
         $order = @('y','t','-','d','l','p')
         $colr  = @($P.logoGray, $P.logoGray, $P.white, $P.white, $P.white, $P.white)
         for ($r = 0; $r -lt 5; $r++) {
-            $s = New-Pad ([Math]::Max(0, [int](($W - 52) / 2)))
-            switch ($r) {
-                0 { $s += (Fg $P.logoRed) + ' ███ ' + $script:RESET }
-                1 { $s += (Fg $P.logoRed) + '█████' + $script:RESET }
-                2 { $s += (Fg $P.logoRed) + '██' + (Bg $P.logoRed) + (Fg $P.white) + '►' + $script:RESET + (Fg $P.logoRed) + '██' + $script:RESET }
-                3 { $s += (Fg $P.logoRed) + '█████' + $script:RESET }
-                4 { $s += (Fg $P.logoRed) + ' ███ ' + $script:RESET }
-            }
-            $s += ' '
+            $s = New-Pad ([Math]::Max(0, [int](($W - 46) / 2)))
             for ($g = 0; $g -lt $order.Count; $g++) {
                 $s += (Fg $colr[$g]) + $glyphs[$order[$g]][$r] + $script:RESET
                 if ($g -lt $order.Count - 1) { $s += '  ' }
