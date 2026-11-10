@@ -1,0 +1,3236 @@
+﻿Config: general (ALT).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.066816s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.040736s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.0752s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.051536s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.021291s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037502s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.061974s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.053804s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.054907s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.027031s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.033994s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.05449s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.033501s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.065013s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.052561s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.055544s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.056205s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.043315s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.047398s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.016426s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.01718s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.038869s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.030757s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.040146s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.030578s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.05506s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037892s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.022421s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.02266s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.047184s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.014479s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.02956s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.046094s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.021699s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.020288s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038402s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.013461s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.080765s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.04216s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.004801s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.034667s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.029598s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.033819s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.026412s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.021325s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.024927s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.03991s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.028459s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.040102s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.04671s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053286s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.078827s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.053283s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.046479s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.06565s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048924s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039779s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.020773s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.076534s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.02681s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.053134s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.046076s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.017526s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.032792s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.058137s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.034823s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.05925s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.017513s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.055145s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.023559s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.004822s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032972s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.037909s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.040885s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.056912s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.047618s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.031872s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053113s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036168s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.023861s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.034367s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.043251s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.006727s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.017626s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.043978s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.015049s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.024636s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04993s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.057394s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039022s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.041571s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.06617s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.020881s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.031725s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.0477s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.044472s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.050815s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.030987s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037397s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045494s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.061805s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038009s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.052733s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.054941s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.048606s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.059887s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.055081s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.017483s  status=FAIL
+
+Config: general (ALT2).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.028771s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.045357s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037205s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.058518s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.043206s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.019152s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029814s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.032529s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.021451s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.038094s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.06602s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.040645s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.019492s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038768s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032285s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.0439s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.0229s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.004997s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.020823s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.031859s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.026539s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.059145s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.045226s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.029794s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.050548s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.019786s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.027583s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04227s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.036475s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.036481s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.034196s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.028092s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.022606s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.062442s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.030146s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037705s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.038694s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.042364s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.018394s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.030241s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.033807s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.030016s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.022085s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.025021s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.062887s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.028562s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.016245s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053873s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.006983s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038651s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.068103s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.035208s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.062447s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.047164s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.011284s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.032411s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.01726s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.018609s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.032985s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.023533s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.047234s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.024023s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.04457s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.039963s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038183s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053084s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.054113s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.045578s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.023584s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045121s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.074942s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.061294s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.03606s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.047205s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.001201s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.023213s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.050855s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.01701s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.037443s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.057621s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.06979s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.014416s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.007069s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032379s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.03305s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.072067s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.026124s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029457s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038474s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.044241s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.007224s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.049165s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.084267s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.015041s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.046861s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.034417s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045982s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.05303s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.067871s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036375s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.053364s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.052773s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.061728s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039021s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.059804s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.051869s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.032478s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.070109s  status=FAIL
+
+Config: general (ALT3).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.050447s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.053279s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.040719s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.044984s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.019834s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.067313s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04062s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.04717s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.05842s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.066066s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.036705s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.043999s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.057473s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.000913s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.050018s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.017448s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.066914s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.016516s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04047s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.045048s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.015826s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.032417s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.028484s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.030074s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.077344s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.040001s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.030353s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.031268s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.020323s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038518s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.060621s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.035911s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039127s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.05214s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.027781s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.04605s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.043524s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.065831s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.017317s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.035405s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048075s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037823s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.027179s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.031571s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.029633s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.018226s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.040707s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038991s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.05103s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.046671s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053739s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036376s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.035183s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032774s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04544s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.057617s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039813s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.058578s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037501s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.044589s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.06432s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.017272s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039685s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.038796s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.053431s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.0321s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.051295s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.008595s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053889s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.042581s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.045946s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.021672s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.034098s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.031536s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.031592s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.017082s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039062s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.023209s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.047777s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.013403s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.02996s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.030177s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.042777s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.033431s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.043412s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.065816s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.068933s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.052059s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.041759s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.017312s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.024997s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.033417s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.023963s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04876s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.054461s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038545s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.043097s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.062462s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037603s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04822s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.016045s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.068889s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.068567s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.030772s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.016934s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.053585s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.03906s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039785s  status=FAIL
+
+Config: general (ALT4).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.040304s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.027391s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053634s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.020945s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.020387s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.046175s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.063316s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.030107s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038057s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.039317s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.060999s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.036684s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.031602s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.034655s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.03887s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.030596s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.06971s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.061742s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.053325s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.061491s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.042175s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.075913s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.029854s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.050207s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036172s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.022078s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.044728s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.059205s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.021673s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.033964s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.02006s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038475s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.006496s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.041846s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038448s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.0251s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.072593s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.032801s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.079123s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.079343s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.068336s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.031637s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.070837s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.035886s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032154s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.062348s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.059806s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.045477s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.05087s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.083773s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.052651s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.037139s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.070305s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.044306s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045497s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.061673s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.0361s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.069808s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.053873s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.05242s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.044382s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.07033s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.069797s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.050381s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.062713s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.035306s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.040892s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.044887s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.061076s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.031697s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038747s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039372s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.050803s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.036484s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.018506s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.021433s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.046215s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.021955s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029665s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.029258s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.045117s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.053847s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037643s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.026463s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.043636s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.041538s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039313s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.051685s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.033043s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.040862s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.034907s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.049848s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.048181s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.060311s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037575s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.029723s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.037103s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.042803s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.067764s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.02736s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.052313s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.058335s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.018818s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.034407s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.049653s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045017s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.08354s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039341s  status=FAIL
+
+Config: general (ALT5).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.046869s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038635s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038649s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.078451s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.030172s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.059844s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.066813s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.034289s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053078s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.073809s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.02558s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.020261s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.053149s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.024121s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032241s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049766s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.044239s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.028578s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04117s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.021644s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038831s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.064143s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.02684s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.029767s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.055952s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.043365s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.02088s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.047189s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.051787s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.054314s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.039181s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.019649s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.054917s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.015004s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.001879s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.051264s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.006828s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.046863s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.070691s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045209s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.025638s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.012584s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.037273s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.049405s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.01094s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04407s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.016872s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.035445s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.035802s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.04595s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053685s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.021975s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.053275s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039949s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.046152s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.055004s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032854s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.047767s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.013968s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.054997s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029485s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.060214s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.04757s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.037566s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.041617s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.0531s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.043312s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.072307s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.031049s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.021243s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.068484s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.066843s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029609s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.040306s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.049902s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.065315s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.058799s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.033073s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.020578s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.032913s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.058122s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049057s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.022188s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039568s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.057197s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.012779s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.021232s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.031763s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.028973s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.014079s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.040662s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.045816s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.022662s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.053061s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.04069s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.076654s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.068607s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.044334s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.0469s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.027824s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.021368s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.028547s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.037038s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.053835s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.023097s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.068385s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.069971s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.033326s  status=FAIL
+
+Config: general (ALT6).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.065098s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.065305s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.021472s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045649s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038258s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.047941s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.035631s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.056452s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.028226s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.027222s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048036s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.030253s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.056322s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.045689s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.054535s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.018573s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.029716s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.001726s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.010583s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037071s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.030506s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.03297s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.04335s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.044012s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.024604s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.051479s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.034419s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.016356s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.04315s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.052888s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.007836s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.020999s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.057688s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045777s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.024988s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.040602s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.02199s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.00358s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.04614s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029116s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.016906s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032367s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.020908s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.033307s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.026105s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.011943s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.041447s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.017572s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045144s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.006563s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032069s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.053115s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048798s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.03965s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.068126s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.036532s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.031817s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036504s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.025794s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037047s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.047732s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.024052s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.02376s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.025511s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.053071s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.067197s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045671s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038665s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.03317s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.054301s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.046352s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.055487s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.05681s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.036849s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.029375s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036393s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.008943s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.001748s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.046943s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.025682s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.040337s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.060516s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.049316s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.025742s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.054155s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.067377s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.05104s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.059097s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.031904s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.057776s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.019726s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.041207s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.049405s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.009535s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.026119s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.028624s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.051297s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.046494s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.049773s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029231s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037287s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.046761s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.06963s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.047893s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038797s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.01684s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.023697s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038308s  status=FAIL
+
+Config: general (ALT7).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.063153s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.064187s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.031649s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04378s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.059765s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.052442s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.034564s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.03357s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.034571s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.025951s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.051653s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.043468s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.068808s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037836s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038596s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.048534s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.029088s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.040977s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.008658s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.077741s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.049925s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.047072s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.042324s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.042574s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.054355s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.056775s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.033445s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029928s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.035597s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.051234s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.021599s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.018539s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.021733s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.044708s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.001908s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.014724s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036351s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.024629s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.041726s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.065622s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.067467s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.045788s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.019944s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.053581s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.017805s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.033415s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.07596s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032262s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.066408s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.043119s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.060166s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.072874s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.047733s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.022631s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.062811s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.031026s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.030508s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.022865s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.054086s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.010333s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.019944s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.034532s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032653s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.028097s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.024953s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.034976s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.031024s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.022511s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.024609s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.010814s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039216s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038551s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036578s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.057397s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037914s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04437s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.065704s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.06715s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.027168s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048943s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.047355s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.082425s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.026357s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.066447s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.028244s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.005189s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.014009s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049666s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.034626s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.057971s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.040289s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037406s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.059061s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.027828s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.04315s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032875s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.067089s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.068538s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053836s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.067129s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037658s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.027507s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.040823s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.028243s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.034829s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.047751s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.034765s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.010706s  status=FAIL
+
+Config: general (ALT8).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.031561s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.017007s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053708s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.042329s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.060546s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.043724s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.046648s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.049036s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.048036s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.022389s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039532s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038905s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.022804s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039519s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.001457s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029733s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.051641s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032677s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.021347s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.058518s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.041239s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.028623s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.03175s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.064964s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.020349s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.040489s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.047058s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.034246s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.022778s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.023867s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.041689s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.066126s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.051098s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049214s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.033832s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.029856s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.024924s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.067678s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037431s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.01655s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.058639s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.046929s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.008233s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.042374s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.022848s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.046084s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039032s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.02036s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.065082s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.052367s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.022242s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.043623s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.031434s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.0392s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.08369s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.054968s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.040371s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.021538s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.065796s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.048489s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.064655s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.057272s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.045076s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.053368s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.065758s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.057308s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.044477s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.046357s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.062351s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.0282s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048388s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053905s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036169s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037978s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.02391s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.050808s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.042623s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032216s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.042245s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.034571s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.019117s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.040912s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.009394s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.023673s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.018398s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.040121s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.046189s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.022813s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.0331s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.015101s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.032135s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.026219s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.048861s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.028705s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.046318s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.067772s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045036s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.052967s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053025s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.066983s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.03087s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.068896s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.026982s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.077246s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.048758s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.018338s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.070078s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032994s  status=FAIL
+
+Config: general (ALT9).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.024387s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.043762s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039351s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.062221s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.064378s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.062269s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049116s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.067308s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.019689s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04076s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.040686s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.050374s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029956s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.029083s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032816s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.032051s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.021086s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.054533s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.023849s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.030969s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.061739s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.015234s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.030247s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037716s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.006869s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.023138s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053298s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045663s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.020243s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.045298s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.037205s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.052968s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.028867s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.027889s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.034866s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.019179s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.020479s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.027532s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.035539s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.012167s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.044813s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.05287s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.041847s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.026481s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.042887s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.048542s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.055358s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.041625s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.050579s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.068299s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.046665s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036405s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.059351s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038623s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.053722s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048539s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.047676s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.050944s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.061244s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.01662s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04405s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039398s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.017633s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.021101s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.04729s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.022576s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.033596s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039412s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.048715s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.039318s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.044556s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.068796s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.065117s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.066986s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.048167s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.030497s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.03746s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.033284s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.043239s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037503s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.01948s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.025206s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.014117s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.020211s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.008504s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.031773s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.044246s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.016311s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.023021s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.030303s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.031633s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.011214s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.043394s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.021703s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.019722s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.009517s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.02437s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.052711s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.083841s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049883s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.068753s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.0676s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.031195s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.054858s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.043771s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.014907s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.06203s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.051213s  status=FAIL
+
+Config: general (ALT10).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.034842s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.069167s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.052901s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.0438s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037326s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.050551s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.056385s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.046497s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.048218s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.039124s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.054731s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.060519s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.046544s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.066745s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.031289s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.037839s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.057544s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.03956s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029407s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.006794s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.042218s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.052131s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.001436s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.022962s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.043691s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.049037s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.05664s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.03514s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.03196s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.065701s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.027123s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.040607s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.04859s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.034402s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038217s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.013633s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.025696s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.046316s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037507s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.032879s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.029531s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038722s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.062299s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.008008s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.029993s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.053465s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.016533s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.020474s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.040707s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.068833s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.010276s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.0409s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.068739s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.03291s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045344s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.055615s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.0378s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.058217s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.023584s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.029037s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.048867s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.047222s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.06742s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.061885s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.031835s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.047202s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.048112s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.068126s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.016949s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.044979s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.055496s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.055051s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.057314s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.055705s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.03139s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.063466s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037055s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038346s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.040404s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.032454s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.046859s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.037725s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.028496s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.046628s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045932s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.03268s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.023975s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.054342s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.045168s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.023856s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.060621s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.042112s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.051677s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.03493s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.050166s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.041783s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.026082s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.033818s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.052881s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.035709s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.067411s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.06533s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045195s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.043652s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.075172s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.037129s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.032983s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.041148s  status=FAIL
+
+Config: general (ALT11).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.017359s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.04852s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053916s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.080577s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.007154s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.068156s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049063s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.060579s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038286s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.06082s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.032635s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.002018s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.039028s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039314s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.017811s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.030092s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.022953s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.017571s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.074876s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.043558s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.034459s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.066498s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.049188s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.052489s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.073471s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.025186s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.027344s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049849s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.052404s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038966s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.041597s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.042043s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.04756s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.033533s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.012989s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.054104s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.055957s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.015364s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.046465s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.047726s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.023792s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.014132s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.039316s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.032568s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038563s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.068451s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.022104s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.043575s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.064685s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.047682s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.028129s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.066159s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.01795s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037777s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.026441s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.064343s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.020161s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.065297s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.002742s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053421s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.067989s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.033223s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.049451s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.044285s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.029665s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.063409s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.015893s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.054345s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.033671s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.068402s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.017227s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.034053s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.067732s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.05257s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.052931s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.061002s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038554s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.051856s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.021092s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.061194s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.043161s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.043495s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.021825s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.035047s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.035162s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.030366s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.044648s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.063767s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.069904s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.047093s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.067171s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.05519s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038577s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.025956s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.043131s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.040489s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.067015s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.046498s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053534s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049231s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.046763s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.03809s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.057507s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.054841s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.048984s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.08105s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.07106s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053725s  status=FAIL
+
+Config: general (ALT12).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.019881s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.016618s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053742s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.040418s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.045039s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.068417s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.06191s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.034051s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.002285s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.021971s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.055316s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037595s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.028372s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.042871s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.012031s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.019844s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.05165s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.020687s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049333s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.006898s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.051113s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.040597s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.036948s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037893s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.032459s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.029661s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.048203s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.024194s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.050451s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.035701s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.015987s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.01973s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039133s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.007572s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.046106s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.062126s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.03073s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.024104s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.049632s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.037958s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.015636s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.01922s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045357s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038533s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.048743s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.004996s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.032627s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.066605s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.065446s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.083762s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.049689s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.033747s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038973s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.04087s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.035554s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.054484s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.03243s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.040013s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.017236s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.045836s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.073535s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039028s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.03765s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.068155s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.049443s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.073572s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.058412s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038339s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.068193s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.046523s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.070163s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.076811s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.01899s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.040236s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038771s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.056607s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.04058s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.03416s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.05495s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.07432s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.047733s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.046785s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.044645s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.048139s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.032621s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.029104s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.01646s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.037672s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037102s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.025066s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029661s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.066145s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.023783s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.01951s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.03011s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.052188s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.003352s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.062728s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053348s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.039568s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.060112s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053585s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.046282s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.051696s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.023822s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.016326s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038819s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.033594s  status=FAIL
+
+Config: general (ALT13).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.051034s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.069587s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.06495s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045688s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.033684s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.034157s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.01971s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.052196s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.061429s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.059073s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.029863s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.045319s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.040904s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.023061s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.022769s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.01929s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.043601s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.052855s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.041975s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.022975s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.046944s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.048908s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.044066s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.027738s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.040655s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.021605s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038656s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.052956s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.040395s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.035069s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.060257s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.04752s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.022759s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036435s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.033735s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.052504s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.059337s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.033865s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.06209s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.082515s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.025176s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.035998s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.042976s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.078338s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.035076s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049877s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038514s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.027179s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.060399s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.068728s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.060022s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036629s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.017616s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.03901s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.03339s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039267s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.01752s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04311s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.061781s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.05464s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.062481s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.042417s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.010701s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.01809s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.043592s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.0522s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.039803s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.053186s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.062026s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.046333s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.051059s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.043015s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.05454s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.03793s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.004593s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029654s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.09296s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.044011s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.038069s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.046261s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.003931s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.051979s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.024447s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.055953s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.065349s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.030327s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.052016s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.058589s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038643s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.062938s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.026246s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.047863s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039093s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.048258s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.020808s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.044734s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.064821s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.035625s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053149s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.051509s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.060697s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038219s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.037423s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.06511s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.017073s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.030132s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039563s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.077038s  status=FAIL
+
+Config: general (EXP).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.0216s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.047355s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038567s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.063339s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.027612s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.043977s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.038079s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.054705s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.056352s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.012154s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.054652s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039365s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045078s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.026106s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.047585s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036212s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.022067s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.054034s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.027669s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.004065s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032054s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.056963s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.007108s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039456s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.048418s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.045956s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.020372s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.039945s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.062543s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.03769s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.03165s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.029276s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.029093s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.085693s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.060348s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.054319s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.014655s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.021903s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.054464s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.05337s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.068686s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.045876s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.044628s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.017119s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.040538s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.035906s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.029927s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.054434s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.028595s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.068142s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037316s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.052596s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.055369s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.054776s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.03744s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.017523s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.085272s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.043404s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.06338s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.040879s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.05238s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039225s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.040898s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.038214s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.046399s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.035398s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.051072s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.041325s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.057941s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049379s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037262s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.045873s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.057525s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.04523s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038009s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.048481s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.054213s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.063259s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.065842s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.036406s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.051835s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.058603s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.062396s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.030858s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.021454s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.025815s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.003579s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.03032s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.027554s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.054545s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.03608s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039026s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.011608s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.02905s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.049041s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.019821s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.081207s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.052285s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037024s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.050983s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.062276s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.042398s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.068583s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.05334s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039226s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.068699s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037888s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.017021s  status=FAIL
+
+Config: general (FAKE TLS AUTO ALT).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029541s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.028399s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.055146s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.062605s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.046743s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.051973s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.019854s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.022358s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.031897s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.054017s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038734s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.043799s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.059808s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.028488s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.042475s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.035408s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.049413s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.017283s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.057967s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.019894s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.041345s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.033865s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037102s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.049603s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.010057s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.045894s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.033207s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.017231s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.056685s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.050652s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.024479s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.042845s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.016494s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.016014s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.034715s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.024966s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045487s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048475s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.030315s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.083895s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.031062s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.007055s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.0444s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039793s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037789s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.082357s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037921s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.028878s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.022626s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.06858s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.075238s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04655s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.023868s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.016749s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.084393s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039104s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.033396s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.075042s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048644s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.035474s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.062272s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.061867s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.026765s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.064462s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.02283s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.052942s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.031661s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.054768s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.043994s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.040529s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.016618s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.055049s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.059576s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.06714s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.035476s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.041882s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.050313s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.027085s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.048806s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.033903s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.054283s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.051326s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.058607s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.018804s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.016726s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.042027s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.046999s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.023387s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.025225s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.025787s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.052042s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.007921s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.061346s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.060328s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.02911s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.035957s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029535s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.021974s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.068473s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.027866s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038078s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.047016s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.083602s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039092s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.033223s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.066897s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048458s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039809s  status=FAIL
+
+Config: general (FAKE TLS AUTO ALT2).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049581s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.044878s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.031474s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.041603s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.031784s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037467s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.033137s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.019124s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.022414s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.037724s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039036s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.03183s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.039922s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.045457s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.034284s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.015861s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.02595s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.051057s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.007649s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.054369s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.035777s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.067598s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.049803s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.010288s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.043887s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037141s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.03725s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.066768s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.063472s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.024012s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.042775s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.019572s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.044121s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.050213s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.031555s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032755s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.041971s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.02229s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.015557s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.033516s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.002411s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.027046s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.025201s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.077174s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.023701s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.016191s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.054255s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.028648s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.058741s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.049677s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.041167s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049947s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.017075s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.047379s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.040893s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.056482s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.055271s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.030333s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.043865s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.060165s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.021762s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.067508s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.051347s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029092s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037682s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.062982s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.024926s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048754s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.018845s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.028009s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.045091s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.045708s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036632s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.036349s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.062405s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.032911s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.020246s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038902s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.016675s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.02827s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037012s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.039563s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.053449s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.017026s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.022324s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.035985s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037058s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.030813s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.028449s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.027937s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029626s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.017989s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.045276s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.020036s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.057273s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.043185s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.019716s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.067547s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.035211s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.034818s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.021756s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.029179s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029648s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038641s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.011466s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.064053s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048426s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038529s  status=FAIL
+
+Config: general (FAKE TLS AUTO ALT3).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.051188s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.05407s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.048536s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.046465s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.036966s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.082328s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.056492s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.027822s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.065606s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.058247s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.007372s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.043008s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.039367s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.016109s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.041607s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.044338s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.059004s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.030946s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.020514s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.067774s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.043224s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.043506s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.057237s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.048837s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.050766s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.043708s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.054503s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.026842s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.050479s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037849s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.034206s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.03768s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.040629s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.05699s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.066455s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037701s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.048814s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.009539s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.030651s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04053s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.002903s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.019386s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.032258s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048019s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.029428s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.023705s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.010831s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.03178s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045227s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.083819s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038479s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.046525s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.054739s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.002039s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.047885s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.049536s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037829s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.030677s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.041108s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.030593s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.039304s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.053466s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.04019s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.020619s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.057987s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.018756s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.066096s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.03747s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.009327s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.02763s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.067685s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.048254s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.041174s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.022777s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.01746s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.028308s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.032652s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.028854s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036337s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.029189s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037246s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.027581s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.045527s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.001129s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.055528s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.00649s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.030319s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.046182s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.044277s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.057314s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.059104s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.032076s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.019112s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036174s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.014728s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.027369s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.061587s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037543s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.062308s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.064881s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.062572s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037408s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.083648s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.054947s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.016542s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.083491s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039272s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.076914s  status=FAIL
+
+Config: general (FAKE TLS AUTO).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.05132s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.030991s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.022797s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029891s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.049294s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.08131s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.041344s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.04028s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.047336s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.020468s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.059361s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.057791s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.043217s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.045222s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.044761s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.003221s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.067748s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.056357s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.025922s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.022813s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.065187s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.017663s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.067803s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.003066s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.046538s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.043741s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.020961s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.069599s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.025467s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.015695s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045141s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.032286s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.012284s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.067988s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.050595s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.036353s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.059624s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.036054s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.01761s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.035909s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.027367s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.0412s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.027294s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.042309s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.028158s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.018689s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.033726s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.022435s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.043688s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.053504s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.04335s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.050254s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.071227s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039401s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.031658s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.040946s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.027508s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.05882s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.067784s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.030852s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.022444s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.049491s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.066893s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.043689s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.004769s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039516s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.035541s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.032787s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.067725s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049071s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.057489s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.028373s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.056395s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.041521s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.044935s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.055873s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.022927s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.018799s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.042836s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.049629s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.058926s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.055389s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.040661s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.04171s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.063339s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048929s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.080173s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04616s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.016243s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.050055s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.03817s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.007901s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053401s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.028397s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.045275s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.054906s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.047231s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.055936s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053333s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.03745s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.018614s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.015652s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.047272s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.024457s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032394s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.046301s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.024656s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.017107s  status=FAIL
+
+Config: general (SIMPLE FAKE ALT).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.050194s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.016731s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032199s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.061399s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039878s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.067222s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.052489s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.028673s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.023145s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.044377s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.019396s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.05614s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.071991s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.057823s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.042094s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.035508s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.047525s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.033054s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.027195s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.049564s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.059221s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.018685s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.026163s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.047841s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.010593s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.022084s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.050542s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.002203s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.017995s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.070281s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.040808s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.025038s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.030689s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.032512s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.03219s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.060606s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.046517s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.023751s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.022258s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.05348s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.04437s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053195s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.0299s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.052542s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.047687s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.067823s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.035755s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039046s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.065461s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.068919s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037003s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.084315s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.033119s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.001575s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.042677s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.034902s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038784s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.072507s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.008199s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.066796s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049764s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.032837s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.067764s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.059536s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.050017s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037576s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.03434s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.041844s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.06664s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.021597s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.025052s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.075151s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.016442s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.041153s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037695s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04594s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.047237s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.047111s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.008221s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.023736s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.044528s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.013461s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.016762s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.047721s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.005395s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048642s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.041604s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.065908s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.020951s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.049567s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.035631s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.075699s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.033395s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.047532s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.029699s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039873s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.035153s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.06894s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.046914s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.052586s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.050541s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053442s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.067385s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.033316s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.054605s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.0681s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048733s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.023742s  status=FAIL
+
+Config: general (SIMPLE FAKE ALT2).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.051422s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038291s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.046801s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045748s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.04155s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.019961s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036603s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.051653s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.071555s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.041923s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.060833s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.05181s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.043474s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.024222s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.06453s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.03469s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.03267s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.046715s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.048702s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.031469s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.029802s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.055557s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.045413s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.021426s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.03173s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.022512s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038428s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.054417s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.028178s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.012895s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.030566s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.058977s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.019425s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.05346s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.033682s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.025099s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045319s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.025569s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038502s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.021213s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.041305s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.042465s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.0287s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.026307s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.033753s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.019955s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.065935s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.007371s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.050417s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.030579s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037855s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.052481s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039005s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.033351s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.052668s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.039437s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.055384s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049451s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.043344s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.06827s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.022142s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.017015s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.061311s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.040144s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.025348s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.037342s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04613s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.0083s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.016053s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029436s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.047298s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.049199s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.043175s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048225s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.046962s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.042439s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.03873s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.040404s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.051966s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.05028s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.044372s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049611s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.046192s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.046803s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.046147s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.029187s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032173s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.063327s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.058905s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.021925s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.054737s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.02109s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.054773s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.067357s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.033055s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.02803s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.081553s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.08567s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.067483s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.039387s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.068043s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.083977s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.058006s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.024759s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053409s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.066673s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048422s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.0696s  status=FAIL
+
+Config: general (SIMPLE FAKE).bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.040052s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.044041s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.017132s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04111s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.04694s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.03815s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.030198s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.021849s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.052632s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.079573s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.068181s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.059697s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.07053s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.051068s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053207s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.061848s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.057493s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.041148s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.053503s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.049346s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.050259s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.044648s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.040886s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032968s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036561s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.054651s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038822s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.027883s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.059923s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.04317s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.050895s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.046086s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.024442s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.011265s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.016818s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.066789s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.033918s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.066843s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.035795s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.047637s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.058549s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.04393s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.017015s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037507s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.015952s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045959s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.049967s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.065108s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.034449s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.068237s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.068658s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.083704s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.032446s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.039303s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.06847s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.03962s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.03918s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.06278s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.074847s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.042073s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.067454s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.044766s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.01926s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.041792s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.061714s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.036059s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.038324s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.031335s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.043163s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.055821s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048303s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.061799s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.064502s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.044362s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.018459s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.053333s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.04729s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.036508s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.046694s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.072184s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.069128s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045785s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.055489s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.044818s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.044534s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.023096s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.017195s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.080706s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.06522s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.017099s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036123s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.046388s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.033854s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.017224s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.020552s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.026801s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.042811s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.052386s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.069028s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.048478s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.059744s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.081731s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.034298s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.022722s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032369s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.0527s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.063984s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038797s  status=FAIL
+
+Config: general.bat (Type: dpi)
+  Target: [🧠] US.GH-HPRN (Self check)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.061674s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.052016s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.058926s  status=FAIL
+  Target: [🇵🇱] PL.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.038479s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.033892s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.06255s  status=FAIL
+  Target: [🇸🇪] SE.AKM-01 (Akamai)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.067474s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.028951s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.057231s  status=FAIL
+  Target: [🇩🇪] DE.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.052588s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.043815s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.035548s  status=FAIL
+  Target: [🇺🇸] US.AWS-01 (AWS)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.058511s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048758s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.077856s  status=FAIL
+  Target: [🇺🇸] US.CDN77-01 (CDN77)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049957s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.04017s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.03852s  status=FAIL
+  Target: [🇨🇦] CA.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.056928s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.054767s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.032507s  status=FAIL
+  Target: [🇨🇦] CA.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.033038s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.004321s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.052118s  status=FAIL
+  Target: [🇺🇸] US.CF-01 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.023942s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.078228s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.036653s  status=FAIL
+  Target: [🇺🇸] US.CF-02 (Cloudflare)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.062583s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.051062s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.043994s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-01 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.053446s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.028182s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.013642s  status=FAIL
+  Target: [🇫🇷] FR.CNTB-02 (Contabo)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.045268s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.05398s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.061417s  status=FAIL
+  Target: [🇩🇪] DE.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036875s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.045267s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038537s  status=FAIL
+  Target: [🇬🇧] UK.DO-01 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.028394s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.062037s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.046724s  status=FAIL
+  Target: [🇬🇧] UK.DO-02 (DigitalOcean)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.019571s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.036281s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.053456s  status=FAIL
+  Target: [🇨🇦] CA.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.048361s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.042534s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.019603s  status=FAIL
+  Target: [🇺🇸] US.FST-01 (Fastly)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.019988s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.029037s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.021158s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-01 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.029911s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038772s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.068446s  status=FAIL
+  Target: [🇺🇸] US.FTBVM-02 (FT/BuyVM)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.032635s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.017113s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.065757s  status=FAIL
+  Target: [🇱🇺] LU.GCORE-01 (Gcore)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.021554s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.072905s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.040666s  status=FAIL
+  Target: [🇺🇸] US.GC-01 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.040019s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.033036s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.038029s  status=FAIL
+  Target: [🇺🇸] US.GC-02 (Google Cloud)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.014667s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.0472s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.059996s  status=FAIL
+  Target: [🇩🇪] DE.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.042912s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.048881s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.04842s  status=FAIL
+  Target: [🇩🇪] DE.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.02305s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.070666s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.075082s  status=FAIL
+  Target: [🇫🇮] FI.HE-01 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.054567s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.07645s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.03221s  status=FAIL
+  Target: [🇫🇮] FI.HE-02 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.041532s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.032513s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.02012s  status=FAIL
+  Target: [🇫🇮] FI.HE-03 (Hetzner)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.034614s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.040574s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.048942s  status=FAIL
+  Target: [🇺🇸] US.MBCOM-01 (Melbicom)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.036193s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.041229s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.019916s  status=FAIL
+  Target: [🇳🇱] NL.MS-01 (Microsoft/Azure)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.057317s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.057462s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.061471s  status=FAIL
+  Target: [🇪🇸] ES.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049875s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.08468s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.068393s  status=FAIL
+  Target: [🇸🇬] SG.OR-01 (Oracle)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.058986s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.065465s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.031601s  status=FAIL
+  Target: [🇫🇷] FR.OVH-01 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.031817s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.059442s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.046036s  status=FAIL
+  Target: [🇫🇷] FR.OVH-02 (OVH)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.049776s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.083719s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.072081s  status=FAIL
+  Target: [🇳🇱] NL.SW-01 (Scaleway)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.043741s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.037418s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.068028s  status=FAIL
+  Target: [🇩🇪] DE.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.04045s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.032699s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.066649s  status=FAIL
+  Target: [🇺🇸] US.VLTR-01 (Vultr)
+    HTTP: code=000  up=0 KB  down=0 KB  time=2.079529s  status=FAIL
+    TLS1.2: code=000  up=0 KB  down=0 KB  time=2.038238s  status=FAIL
+    TLS1.3: code=000  up=0 KB  down=0 KB  time=2.048427s  status=FAIL
+
+=== ANALYTICS ===
+general (ALT11).bat              : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general (ALT3).bat               : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general (FAKE TLS AUTO).bat      : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general (ALT6).bat               : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general (ALT5).bat               : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general (SIMPLE FAKE ALT).bat    : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general (FAKE TLS AUTO ALT3).bat : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general (ALT10).bat              : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general (FAKE TLS AUTO ALT).bat  : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general (ALT13).bat              : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general.bat                      : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general (ALT7).bat               : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general (ALT4).bat               : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general (FAKE TLS AUTO ALT2).bat : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general (EXP).bat                : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general (ALT2).bat               : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general (ALT8).bat               : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general (ALT12).bat              : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general (ALT9).bat               : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general (ALT).bat                : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general (SIMPLE FAKE).bat        : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+general (SIMPLE FAKE ALT2).bat   : OK:   0, FAIL: 108, UNSUP:   0, BLOCKED:   0
+Best strategy: general (ALT11).bat

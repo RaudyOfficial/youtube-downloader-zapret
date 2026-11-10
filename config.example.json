@@ -1,0 +1,8 @@
+{
+  "ytDlpPath": "tools/yt-dlp.exe",
+  "zapretBat": "zapret/general (ALT11).bat",
+  "downloadDir": "C:/Users/raudy/Downloads",
+  "ffmpegDir": "C:/ffmpeg/bin",
+  "defaultFormat": "720",
+  "language": "ru"
+}

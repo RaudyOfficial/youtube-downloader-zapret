@@ -1,0 +1,19 @@
+# Скачанные видео и аудио
+downloads/
+*.mp4
+*.mp3
+*.mkv
+*.webm
+*.part
+
+# Логи и временные файлы
+*.log
+*.out
+temp/
+
+# Локальный конфиг (создаётся из config.example.json)
+config.json
+
+# OS
+.DS_Store
+Thumbs.db
